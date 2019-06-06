@@ -11,4 +11,4 @@ The whole code was actually based on that tutorial. At first I tried writing the
 
 Finally I was able to get the client-server nodes working so that I send some two numbers and the sum was returned. The first number, however is published to /vel_cmd topic. I did not have the time to test if publishing once makes the husky move continuously or not. 
 
-After this I would have used husky_control package to make the robot move. It should take twist as input.
+Okay It works now, having positive integer as the first number makes the robot move in one direction and negative value in the other direction.
