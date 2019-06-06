@@ -13,4 +13,4 @@ Finally I was able to get the client-server nodes working so that I send some tw
 
 Okay It works now, having positive integer as the first number makes the robot move in one direction and negative value in the other direction.
 
-The movement is not continuous, though.
+The movement is not continuous, though. This should be fixable with ros time and periodic publishing.
