@@ -31,7 +31,7 @@ int main(int argc, char **argv)
     
     ros::ServiceServer service = n.advertiseService("command_husky", &commander::callback, &dir);
 
-    ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/vel_cmd", 10);
+    ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     geometry_msgs::Twist msg;
     ros::Rate loop_rate(10);
     while (ros::ok())

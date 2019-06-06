@@ -19,7 +19,7 @@ class commander{
 
 commander::commander(){
     service = n.advertiseService("add_two_ints", &commander::callback, this);
-    pub = n.advertise<geometry_msgs::Twist>("/vel_cmd", 1, true);
+    pub = n.advertise<geometry_msgs::Twist>("/cmd_vel", 1, true);
 }
 
     bool commander::callback(husky_commander::AddTwoInts::Request  &req,
